@@ -3,3 +3,7 @@
         background-color: yellow;
         border: 2px solid black;
 }
+
+#root{
+        font-size: large;
+}
