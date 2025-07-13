@@ -18,3 +18,4 @@ Welcome to my daily MERN stack learning journey!
 ### 📅 Day 9
 - Implemented array methods: map, filter, reduce
 - Practiced small projects using DOM manipulation
+...
