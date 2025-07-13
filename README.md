@@ -13,7 +13,7 @@ Welcome to my daily MERN stack learning journey!
 - Explored conditional statements and loops
 - Worked on small practice problems
 
-...
+...--
 
 ### 📅 Day 9
 - Implemented array methods: map, filter, reduce
