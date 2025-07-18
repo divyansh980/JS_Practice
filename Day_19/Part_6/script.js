@@ -90,3 +90,52 @@ function concat (str){
         }
         return result;
 }
+
+
+// LExical Scope
+ function outerFun(){
+        let x = 29;
+        let y = 44;
+
+        function innerFun(){
+                console.log(x);
+        }
+        innerFun();
+ }
+
+
+//  PRactice Question 
+// What will be the output?
+
+let greet = "Hello";  //Global scope
+
+function changeGreet(){
+        let greet = "ram ram ji";  //function scope
+        console.log(greet);
+
+        function innerGreet(){
+                console.log(greet);  //lexical scope
+                
+        }
+
+              
+}
+ console.log(greet);
+changeGreet();
+
+
+
+
+// HIgh order function
+
+function muiltleGreet (func, count){
+        for(let i = 1; i<=count;i++){
+                func();
+        }
+}
+
+let greet2 = function(){
+        console.log("Divyansh");
+}
+
+muiltleGreet(greet2,10);
