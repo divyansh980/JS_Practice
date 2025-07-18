@@ -63,3 +63,30 @@ function printTable(num){
 }
 
 printTable(50);
+
+
+// Question 
+// PRint the sum of n numbers
+
+
+function getSum(n){
+        let sum = 0;
+        for(let i= 1 ; i<=n; i++){
+                sum += i;
+        }
+        return sum;
+}
+
+
+// Practice Question
+// Create a function that returns the concatenation of all strings in an array.
+
+let str = ["hi", "hello","bye","!"];
+
+function concat (str){
+        let result = "";
+        for(let i = 0; i<str.length;i++){
+                result += str[i];
+        }
+        return result;
+}
