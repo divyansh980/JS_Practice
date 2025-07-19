@@ -139,3 +139,28 @@ let greet2 = function(){
 }
 
 muiltleGreet(greet2,10);
+
+
+
+
+//MEthods
+
+const calculator = {
+        add: function (a, b){
+                return a + b;
+        },
+        mul : function (a , b){
+                return a * b ;
+        },
+        sub : function(a , b){
+                return a- b;
+        }
+};
+
+// console code are 
+calculator.add(23, 5);
+28
+calculator.mul(23, 5);
+115
+calculator.sub(23, 5);
+18
