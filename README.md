@@ -1,3 +1,7 @@
+// The text you provided seems to be a markdown document outlining the daily progress of learning MERN
+// stack development. It includes headings for each day, detailing what was learned or practiced on
+// that particular day. Markdown is a lightweight markup language with plain text formatting syntax,
+// often used to create documentation or notes.
 "# JS_BY_ApnaClg" 
 # JS_BY_ApnaClg (MERN Practice)
 
