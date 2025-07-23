@@ -1,40 +1,40 @@
 // //Array Methods
-// // let arr = [1,2,3,4,5];
+// let arr = [1,2,3,4,5];
 
-// /* The code is using the `forEach` method on the `arr` array to iterate over each element in the array
-// and log each element to the console. */
-// arr.forEach((el) => {
+/* The code is using the `forEach` method on the `arr` array to iterate over each element in the array
+and log each element to the console. */
+arr.forEach((el) => {
+        console.log(el);
+})
+
+
+arr.forEach(function(el) {
+        console.log(el);        
+});
+
+
+// let print = function (el){
 //         console.log(el);
-// })
+// };
 
+// arr.forEach(print);
 
-// arr.forEach(function(el) {
-//         console.log(el);        
-// });
+let arr = [{
+        name:"divy",
+        marks:95
+},
+{
+        name : "Rahul",
+        marks:85
+},
+{
+        name:"Dragon",
+        marks:75
+}];
 
-
-// // let print = function (el){
-// //         console.log(el);
-// // };
-
-// // arr.forEach(print);
-
-// let arr = [{
-//         name:"divy",
-//         marks:95
-// },
-// {
-//         name : "Rahul",
-//         marks:85
-// },
-// {
-//         name:"Dragon",
-//         marks:75
-// }];
-
-// arr.forEach ((student) => {
-//         console.log(student.marks);
-// });
+arr.forEach ((student) => {
+        console.log(student.marks);
+});
 
 
 
@@ -45,10 +45,10 @@
 
 // example
 
-// let num = [1,2,3,4];
-// let double = num.map((el) => {
-//         return el *el ;
-// });
+let num = [1,2,3,4];
+let double = num.map((el) => {
+        return el *el ;
+});
         
 
 
@@ -80,7 +80,3 @@ let ans = number.filter((el) =>{
         return el % 2 == 0 ; //  even --> true , odd --> false
 })
 
-let number = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
-let ans = number.filter((el) =>{
-        return el % 2 == 0 ; //  even --> true , odd --> false
-})
