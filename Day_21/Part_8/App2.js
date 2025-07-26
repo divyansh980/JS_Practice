@@ -96,3 +96,14 @@ function getMin(nums2){
 }
 
 let nums2 = [10,20,30,40,5]
+
+
+
+
+//Default parameter
+
+function sum(a = 2,b){
+        return a + b;
+}
+sum(1,3);   // 4
+sum(1);     //a = 1, b = undefined
