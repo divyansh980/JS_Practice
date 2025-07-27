@@ -73,37 +73,103 @@
 // Practice Ques1
 // Check if all numbers in our array are multiple fo 10 or not.
 
-let nums = [10,20,30,40];
+// let nums = [10,20,30,40];
 
-let ans = nums.every((el) => el %10 == 0 );
-console.log(ans);
-
-
+// let ans = nums.every((el) => el %10 == 0 );
+// console.log(ans);
 
 
 
 
-function getMin(nums2){
-        let min = nums2.reduce((min, el) =>{
-                if(min>el){
-                        return min;
 
-                }else{
-                        return el;
-                }
-        });
-        return min;
-}
 
-let nums2 = [10,20,30,40,5]
+// function getMin(nums2){
+//         let min = nums2.reduce((min, el) =>{
+//                 if(min>el){
+//                         return min;
+
+//                 }else{
+//                         return el;
+//                 }
+//         });
+//         return min;
+// }
+
+// let nums2 = [10,20,30,40,5]
 
 
 
 
 //Default parameter
 
-function sum(a = 2,b){
-        return a + b;
+// function sum(a = 2,b){
+//         return a + b;
+// }
+// sum(1,3);   // 4
+// sum(1);     //a = 1, b = undefined 
+
+
+
+//Spread mathod
+//  let arr = [1,2,4,5,6,65];
+//  Math.min(...arr);
+
+
+
+
+//  let div = [1,2,3,4,5,6];
+//  let newDiv = [...div];
+
+//  let namee = [..."gupta"];
+
+//  let odd = [1,3,5,7,9];
+//  let even = [2,4,6,8,10];
+
+//  let number = [...odd,...even];
+//   console.log(number);
+ 
+
+// const  data = {
+//         email : "ironman@gmail.com",
+//         pass : "abcd",
+// };
+
+// let dataCopy = {...data, id:123, country:"India"};
+
+
+// let arr = [1,2,3,4,5];  //val
+// let obj1 = {...arr};   //obj -> key:val
+
+// let obj2 = {..."hello"};
+
+
+// Rest method 
+
+function summer(...args){
+        //argument
+        for(let i = 0; i< args.length; i++){
+                console.log("you gave us: ", args[i]);
+        }
+        
 }
-sum(1,3);   // 4
-sum(1);     //a = 1, b = undefined
+
+function minn(a,b,c,d){
+        console.log(arguments);
+}
+
+
+function sum(...args){
+        return args.reduce((sum, el) => sum + el);
+}
+
+
+function min (...args){
+        console.log(msg);
+        return args.reduce((min,el) =>{
+                if(min>el){
+                        return el;
+                }else{
+                        return min;                
+                }
+        });
+}
